@@ -1,0 +1,24 @@
+{
+  
+  "acceptor":
+  {
+    "entityId":"BGPQETECH",
+    "userId":"S1234567A",
+    "role":"Acceptor",
+    "uname":"Tan Ah Kow"
+  },
+
+  "eligibilityWarningMsg":"The applicant may not meet the eligibility criteria for this grant. Visit FAQ page for more information on other government grants.",
+  "goBusinessPortal":"https://www.gobus.co/",
+  "eligibilityInfoBarErrors":
+  {
+    "companyProfile":"You can’t submit this grant until you add the required information to your company profile.",
+    "financialInfo":"Your company's financial and employment information is outdated.",
+    "Attachmentsize":"Attachment size limit of 50 MB is exceeded. Please reduce attachment file sizes in either Company Profile or the current form."
+  },
+  "mailingAddressFormErrors":
+  {
+    "invalidPostalCode":"Oops, that’s not a 6-digit Singapore postal code",
+    "postalCodeNotFound":"We can't find the postal code. Please try again."
+  }
+}

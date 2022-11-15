@@ -1,0 +1,39 @@
+{
+  "name": "cypress_automation",
+  "version": "1.0.0",
+  "description": "Cypress Automation",
+  "main": "index.js",
+  "scripts": {
+    "openTestRunner": "cypress open",
+    "bgpExecution": "cypress run",
+    "runContactDetailsTests":"npx cypress run --spec cypress/e2e/features/ContactDetailsSection.feature",
+    "runEligibilityTests": "cypress run --env tags=@eligibilityForm",
+    "chromeHeadlessExecution": "cypress run --browser chrome",
+    "electronExecution": "cypress run --browser electron --headed"
+  },
+  
+  "author": "MohanG",
+  "license": "ISC",
+  "homepage": "https://github.com/mohan12007/BGP_Automation#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+    "cypress": "^10.10.0",
+    "esbuild": "^0.15.10",
+    "multiple-cucumber-html-reporter": "^3.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/support/stepDefinitions/*.js",
+    "json": {
+      "enabled": true,
+      "output":"cypress/cucumber-json/cucumber-results.json",
+      "formatter": "cucumber-json-formatter.exe"
+    },
+    "messages": {
+      "enabled": true,
+      "output": "cypress/cucumber-messages/cucumber-messages.ndjson"
+    }
+  }
+}
